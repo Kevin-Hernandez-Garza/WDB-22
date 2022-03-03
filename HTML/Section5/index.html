@@ -16,9 +16,14 @@
         <!-- table rows  -->
         <tr>
           <!-- table headings -->
-          <th>Name</th>
-          <th>Age</th>
-          <th>Weight</th>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">Age</th>
+          <th colspan="2">Weight</th>
+        </tr>
+
+        <tr>
+          <th>lbs</th>
+          <th>kg</th>
         </tr>
       </thead>
 
@@ -29,31 +34,35 @@
           <td>Person 1</td>
           <td>26</td>
           <td>180</td>
+          <td>90</td>
         </tr>
 
         <tr>
           <td>Person 2</td>
           <td>43</td>
           <td>450</td>
+          <td>230</td>
         </tr>
 
         <tr>
           <td>Person 3</td>
           <td>35</td>
           <td>224</td>
+          <td>109</td>
         </tr>
 
         <tr>
           <td>Person 4</td>
           <td>18</td>
           <td>150</td>
+          <td>65</td>
         </tr>
       </tbody>
 
       <!-- table footer -->
       <tfoot>
         <tr>
-          <td>Weight Loss Tracker &copy;</td>
+          <td colspan="4">Weight Loss Tracker &copy;</td>
         </tr>
       </tfoot>
     </table>
