@@ -9,11 +9,32 @@
   <body>
     <h1>Forms Intro</h1>
 
-    <form action="">
-      <input type="date" value="1995-02-04" />
-      <input type="text" placeholder="username" />
-      <input type="password" placeholder="password" />
-      <input type="color" />
+    <form action="/person">
+      <p>
+        <!-- This is considered standard practice, and is encouraged -->
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" value="1995-02-04" id="birthday" />
+      </p>
+
+      <p>
+        <!-- We don't need a "for" or "id" attribute since we wrapped the input element inside the label tags. It is not common practice to do this -->
+        <label>
+          Username:
+          <input type="text" placeholder="username" />
+        </label>
+      </p>
+
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="password" id="password" />
+      </p>
+
+      <p>
+        <label>
+          Color Picker:
+          <input type="color" />
+        </label>
+      </p>
     </form>
   </body>
 </html>
