@@ -20,19 +20,24 @@
         <!-- We don't need a "for" or "id" attribute since we wrapped the input element inside the label tags. It is not common practice to do this -->
         <label>
           Username:
-          <input type="text" placeholder="username" />
+          <input type="text" placeholder="username" name="username" />
         </label>
       </p>
 
       <p>
         <label for="password">Password:</label>
-        <input type="password" placeholder="password" id="password" />
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
       </p>
 
       <p>
         <label>
           Color Picker:
-          <input type="color" />
+          <input type="color" name="color" name="color" />
         </label>
       </p>
 
