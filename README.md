@@ -22,9 +22,9 @@
 
 ## Built With
 
-- MERN Stack
 - HTML
 - CSS
+- Javascript
 
 ## Contribution
 
