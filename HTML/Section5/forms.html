@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms Intro</h1>
+
+    <form action="/person">
+      <p>
+        <!-- This is considered standard practice, and is encouraged -->
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" value="1995-02-04" id="birthday" />
+      </p>
+
+      <p>
+        <!-- We don't need a "for" or "id" attribute since we wrapped the input element inside the label tags. It is not common practice to do this -->
+        <label>
+          Username:
+          <input type="text" placeholder="username" name="username" />
+        </label>
+      </p>
+
+      <p>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+      </p>
+
+      <p>
+        <label>
+          Color Picker:
+          <input type="color" name="color" name="color" />
+        </label>
+      </p>
+
+      <!-- The button element is used to submit forms -->
+      <button>Submit</button>
+
+      <p>
+        <!-- This button element acts like one,  but doesn't submit the form. -->
+        <button type="button">Button</button>
+      </p>
+
+      <p>
+        <!-- This submit button is not encouraged for the fact the only way to change it's name is to add a "value" attribute, and setting the value to whatever you want the button to display -->
+        <input type="submit" value="Click Me" />
+      </p>
+    </form>
+
+    <hr />
+
+    <!-- Outside of the form, no default behavior -->
+    <button>Submit</button>
+
+    <hr />
+    <!-- Hijack Search (Reddit, Google, YouTube) -->
+
+    <h2>Reddit</h2>
+    <form
+      action="https://www.reddit.com/search"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <input type="text" name="q" />
+      <button>Search</button>
+    </form>
+
+    <h2>Google</h2>
+    <form
+      action="https://www.google.com/search"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <input type="text" name="q" />
+      <button>Search</button>
+    </form>
+
+    <h2>YouTube</h2>
+    <form
+      action="https://www.youtube.com/results"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <input type="text" name="search_query" />
+      <button>Search</button>
+    </form>
+  </body>
+</html>
