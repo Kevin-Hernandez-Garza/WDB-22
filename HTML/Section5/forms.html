@@ -138,15 +138,47 @@
 
     <h2>Select: Drop-Down Menu</h2>
 
-    <label for="pet-selection">Choose your favorite pet:</label>
-    <select name="pets" id="pet-selection">
-      <!-- first option is a placeholder -->
-      <option value="">--Please Choose A Pet--</option>
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
-      <option value="tiger">Tiger</option>
-      <option value="lion">Lion</option>
-      <option value="snake">Snake</option>
-    </select>
+    <form action="/favorite_pets">
+      <label for="pet-selection">Choose your favorite pet:</label>
+      <select name="pets" id="pet-selection">
+        <!-- first option is a placeholder -->
+        <option value="">--Please Choose A Pet--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="tiger">Tiger</option>
+        <option value="lion">Lion</option>
+        <option value="snake">Snake</option>
+      </select>
+
+      <button>Submit</button>
+    </form>
+
+    <hr />
+    <!-- Range & Text Area elements -->
+    <h2>Range & Text Area</h2>
+
+    <form action="/age_group">
+      <label for="age">You're Current Age:</label>
+      <input type="range" id="age" min="0" max="100" name="current_age" />
+
+      <button>Submit</button>
+    </form>
+
+    <form action="/about_yourself">
+      <p>
+        Textarea Box
+        <br />
+
+        <textarea
+          name="intro"
+          id="about"
+          cols="40"
+          rows="10"
+          placeholder="Tell something interesting about yourself!"
+        ></textarea>
+        <br />
+        <button>Submit</button>
+      </p>
+    </form>
   </body>
 </html>
