@@ -1,17 +1,18 @@
+/* rgb color codes */
 * {
-    background-color: goldenrod;
+    background-color: rgb(218, 165, 32);
 }
 
 h1 {
-    color: crimson;
+    color: rgb(220, 20, 60);
 }
 
 p {
-    color: blueviolet;
+    color: rgb(138, 43, 226);
 }
 
 button {
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: black;
 }
 
