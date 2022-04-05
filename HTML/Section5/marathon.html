@@ -8,35 +8,50 @@
   </head>
   <body>
     <h1>Race Registration! 🏃🏽‍♂️</h1>
+    <!-- where the form sends data to -->
     <form action="/marathon-registration">
-      <p>
+      <div>
+        <!-- text input for first name & last name -->
         <label for="first">First Name:</label>
-        <input type="text" name="firstName" id="first" minlength="2" required />
-      </p>
+        <input
+          type="text"
+          name="firstName"
+          id="first"
+          minlength="2"
+          placeholder="Enter First Name"
+          required
+        />
+      </div>
 
-      <p>
+      <div>
         <label for="last">Last Name:</label>
-        <input type="text" name="lastName" id="last" required />
-      </p>
+        <input
+          type="text"
+          name="lastName"
+          id="last"
+          placeholder="Enter Last Name"
+          required
+        />
+      </div>
 
       <p>Select a Race:</p>
 
-      <p>
+      <div>
         <input type="radio" name="marathon-type" id="fiveK" value="fiveK" />
         <label for="fiveK">Fun Run 5K</label>
-      </p>
+      </div>
 
-      <p>
+      <div>
         <input
           type="radio"
           name="marathon-type"
           id="half-marathon"
           value="half-marathon"
         />
-        <label for="marathon-type">Half Marathon</label>
-      </p>
+        <label for="half-marathon">Half Marathon</label>
+      </div>
 
-      <p>
+      <div>
         <input
           type="radio"
           name="marathon-type"
@@ -44,31 +59,39 @@
           value="full-marathon"
         />
         <label for="full-marathon">Full Marathon</label>
-      </p>
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" required />
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Email Here"
+          required
+        />
 
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        minlength="4"
-        maxlength="20"
-        required
-      />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          minlength="4"
+          maxlength="20"
+          placeholder="Enter Password Here"
+          required
+        />
+      </div>
 
-      <p>
+      <div>
         <label for="age-group">Select Age Group:</label>
-        <select name="ages" id="age-group">
+        <select name="division" id="age-group">
           <option value="">-- Select Age Group --</option>
-          <option value="under-ten">Under 10</option>
-          <option value="teen">11-14</option>
-          <option value="high-school">15-19</option>
-          <option value="young-adults">20-29</option>
-          <option value="oldies">Over 30</option>
+          <option value="kids">Under 10</option>
+          <option value="teen">11-13</option>
+          <option value="high-school">15-18</option>
+          <option value="young-adults">19-25</option>
+          <option value="oldies">Over 26</option>
         </select>
-      </p>
+      </div>
 
       <button>Register</button>
     </form>
