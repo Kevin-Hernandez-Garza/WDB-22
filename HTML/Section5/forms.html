@@ -92,5 +92,116 @@
       <input type="text" name="search_query" />
       <button>Search</button>
     </form>
+
+    <hr />
+
+    <!-- checkboxes, radio button, and select -->
+
+    <!-- allows to you select multiple values -->
+    <h2>Checkboxes</h2>
+
+    <form action="/colors">
+      <input type="checkbox" id="red" name="color" value="red" checked />
+      <label for="red">Red</label>
+
+      <input type="checkbox" id="blue" name="color" value="blue" />
+      <label for="blue">Blue</label>
+
+      <input type="checkbox" id="green" name="color" value="green" />
+      <label for="green">Green</label>
+
+      <button>Submit</button>
+    </form>
+
+    <!-- can only select one option -->
+    <h2>Radio Buttons</h2>
+    <form action="/profession">
+      <input type="radio" name="careerpath" id="frontend" value="frontend" />
+      <label for="frontend">Frontend Web Developer</label>
+
+      <input type="radio" name="careerpath" id="backend" value="backend" />
+      <label for="backend">Backend Web Developer</label>
+
+      <input type="radio" name="careerpath" id="fullstack" value="fullstack" />
+      <label for="fullstack">Full-Stack Developer</label>
+
+      <input
+        type="radio"
+        name="careerpath"
+        id="softwareengineer"
+        value="softwareengineer"
+      />
+      <label for="softwareengineer">Software Engineer</label>
+
+      <button>Submit</button>
+    </form>
+
+    <h2>Select: Drop-Down Menu</h2>
+
+    <form action="/favorite_pets">
+      <label for="pet-selection">Choose your favorite pet:</label>
+      <select name="pets" id="pet-selection">
+        <!-- first option is a placeholder -->
+        <option value="">--Please Choose A Pet--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="tiger">Tiger</option>
+        <option value="lion">Lion</option>
+        <option value="snake">Snake</option>
+      </select>
+
+      <button>Submit</button>
+    </form>
+
+    <hr />
+    <!-- Range & Text Area elements -->
+    <h2>Range & Text Area</h2>
+
+    <form action="/age_group">
+      <label for="age">You're Current Age:</label>
+      <input type="range" id="age" min="0" max="100" name="current_age" />
+
+      <button>Submit</button>
+    </form>
+
+    <form action="/about_yourself">
+      <p>
+        Textarea Box
+        <br />
+
+        <textarea
+          name="intro"
+          id="about"
+          cols="40"
+          rows="10"
+          placeholder="Tell something interesting about yourself!"
+        ></textarea>
+        <br />
+        <button>Submit</button>
+      </p>
+    </form>
+
+    <!-- Validations -->
+    <h2>Validations</h2>
+
+    <form action="/dummy">
+      <p>
+        <label for="first">Enter Your First Name:</label>
+        <!-- using the required attribute to make sure it's not left blank -->
+        <input type="text" name="first" id="first" minlength="2" required />
+      </p>
+
+      <p>
+        <label for="last">Enter Your Last Name:</label>
+        <input type="text" name="last" id="last" maxlength="8" required />
+      </p>
+
+      <p>
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" required />
+      </p>
+
+      <button>Submit</button>
+    </form>
   </body>
 </html>
