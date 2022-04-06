@@ -1,0 +1,24 @@
+/* global selector, not commonly used */
+* {
+    background-color: #fefae0;
+}
+
+/* selecting multiple elements to have the same styles */
+h1, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+/* id selector */
+#mainTitle {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #606c38;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* class selector */
+.paragraph {
+    color: #283618;
+}
