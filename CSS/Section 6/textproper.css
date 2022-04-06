@@ -2,8 +2,18 @@ h1, h2 {
     text-align: center;
     /* normal weight */
     font-weight: 400;
+    text-decoration: rgb(255, 0, 0) underline wavy;
+    /* controls space between letter, equals 8px */
+    letter-spacing: 0.5rem; 
 }
 
 p {
     text-align: right;
+    /* line-height, commonly used to set the distance b/w lines of text */
+    line-height: 2;
+}
+
+a {
+    /* removing the default underline for an anchor element */
+    text-decoration: none;
 }
