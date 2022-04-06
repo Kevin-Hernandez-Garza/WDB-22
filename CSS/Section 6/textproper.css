@@ -1,0 +1,9 @@
+h1, h2 {
+    text-align: center;
+    /* normal weight */
+    font-weight: 400;
+}
+
+p {
+    text-align: right;
+}
