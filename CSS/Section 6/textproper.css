@@ -1,3 +1,9 @@
+* {
+    /* font stack (just incase you don't have it. It goes down the line of back-ups.) */
+    /* san-serif is a font family of types */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 h1, h2 {
     text-align: center;
     /* normal weight */
@@ -5,12 +11,15 @@ h1, h2 {
     text-decoration: rgb(255, 0, 0) underline wavy;
     /* controls space between letter, equals 8px */
     letter-spacing: 0.5rem; 
+    /* rem is an relative unit */
+    font-size: 2rem;
 }
 
 p {
     text-align: right;
     /* line-height, commonly used to set the distance b/w lines of text */
     line-height: 2;
+    font-size: 1rem;
 }
 
 a {
