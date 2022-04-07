@@ -22,3 +22,10 @@ h1, p {
 .paragraph {
     color: #283618;
 }
+
+/* descendant selector, every anchor tag inside of a list item */
+li a {
+    font-size: 2rem;
+    color: #bc6c25;
+    text-decoration: none;
+}
