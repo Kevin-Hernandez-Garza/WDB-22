@@ -57,3 +57,28 @@ p[class~="odd"] {
     background-color: #000;
     color: #fff;
 } */
+
+
+/* pseudo class */
+
+/* hovering over the anchor element */
+a:hover {
+    color: #606c38;
+    text-decoration: underline;
+}
+
+/* hovering over the element with the class value of "odd" */
+.odd:hover {
+    color: #000;
+    background-color: white;
+}
+
+/* when an anchor tag is clicked */
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+/* this pseudo class targets every even element inside the list item */
+li:nth-of-type(2n) {
+    background-color: rgb(0, 200, 0);
+}
