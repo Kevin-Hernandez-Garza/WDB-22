@@ -29,3 +29,31 @@ li a {
     color: #bc6c25;
     text-decoration: none;
 }
+
+/* adjacent selector, p tag that comes immediately after an h1 */
+h1 + p {
+    font-size: 2rem;
+}
+
+/* direct descendant, ???  */
+ul > li {
+    color: plum !important;
+}
+
+/* attribute selector, selects all input elements with the type attribute set to text */
+input[type="text"] {
+    background-color: #283618;
+    color: white;
+}
+
+/* another example of a attribute selector, where it selects the class attribute with the value of containing the word "odd" */
+p[class~="odd"] {
+    background-color: #000;
+    color: #fff;
+}
+
+/* same thing as the above example */
+/* p[class*="odd"] {
+    background-color: #000;
+    color: #fff;
+} */
