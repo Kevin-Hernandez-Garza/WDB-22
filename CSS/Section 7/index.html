@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <h1 id="mainTitle">Main Title</h1>
+
+    <p class="paragraph odd">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias
+      voluptatem voluptate odio deserunt numquam ab ad nulla sed delectus, quasi
+      fuga? Ipsam quidem nobis aliquam molestias voluptatibus sed minima eum
+      incidunt animi, similique consequatur ipsum omnis est quis libero deserunt
+      aperiam? Ipsa, repellat. Rerum, cumque? Dignissimos molestias ducimus
+      minima ex reiciendis, id ab blanditiis aperiam itaque sunt unde eum ad
+      obcaecati perferendis ipsum cum nemo accusamus odit sapiente, ratione est
+      modi qui! Cumque architecto totam, non incidunt provident placeat
+      accusamus aut! Vero quod minima distinctio vitae cumque animi
+      necessitatibus et, accusantium exercitationem eos doloremque mollitia,
+      officiis, laudantium quasi dolore!
+    </p>
+
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+      distinctio delectus illo illum minus similique culpa id. Voluptates
+      deserunt ducimus quo aut beatae, culpa accusamus cum harum eius
+      consequatur, id, voluptas hic ad blanditiis facere reiciendis corrupti
+      voluptate placeat a.
+    </p>
+
+    <p class="paragraph odd">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis iure vel
+      repellat dignissimos temporibus perspiciatis numquam esse reprehenderit
+      recusandae eligendi eum, est neque! Reprehenderit, commodi impedit totam
+      cumque laudantium ipsa magni quasi voluptatem nihil provident id harum
+      inventore eveniet aliquam, ab, eius asperiores. Sed eaque praesentium
+      eligendi placeat vero voluptate quasi temporibus dolore accusantium a? Quo
+      illo repudiandae, quae exercitationem similique blanditiis vitae explicabo
+      deserunt impedit doloremque!
+    </p>
+
+    <hr />
+
+    <!-- using the descendant selector, to select all anchor elements within the unordered list -->
+    <ul>
+      <li>
+        <a href="https://www.google.com" target="_blank" rel="noreferrer"
+          >google</a
+        >
+      </li>
+      <li>
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer"
+          >youtube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.amazon.com" target="_blank" rel="noreferrer"
+          >amazon</a
+        >
+        <ol>
+          <li><a href="">link</a>clothes</li>
+          <li>food</li>
+          <li>electronics</li>
+        </ol>
+      </li>
+    </ul>
+
+    <div>
+      <label for="pass"> Password:</label>
+      <input type="password" id="pass" placeholder="Password" />
+    </div>
+
+    <div>
+      <label for="email"> Email:</label>
+      <input type="email" placeholder="Email" />
+    </div>
+
+    <div>
+      <label for="name"> Name:</label>
+      <input type="text" id="name" placeholder="Full Name" />
+    </div>
+  </body>
+</html>

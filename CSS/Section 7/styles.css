@@ -1,0 +1,84 @@
+/* global selector, not commonly used */
+* {
+    background-color: #fefae0;
+}
+
+/* selecting multiple elements to have the same styles */
+h1, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+/* id selector */
+#mainTitle {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #606c38;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* class selector */
+.paragraph {
+    color: #283618;
+}
+
+/* descendant selector, every anchor tag inside of a list item */
+li a {
+    font-size: 2rem;
+    color: #bc6c25;
+    text-decoration: none;
+}
+
+/* adjacent selector, p tag that comes immediately after an h1 */
+h1 + p {
+    font-size: 2rem;
+}
+
+/* direct descendant, ???  */
+ul > li {
+    color: plum !important;
+}
+
+/* attribute selector, selects all input elements with the type attribute set to text */
+input[type="text"] {
+    background-color: #283618;
+    color: white;
+}
+
+/* another example of a attribute selector, where it selects the class attribute with the value of containing the word "odd" */
+p[class~="odd"] {
+    background-color: #000;
+    color: #fff;
+}
+
+/* same thing as the above example */
+/* p[class*="odd"] {
+    background-color: #000;
+    color: #fff;
+} */
+
+
+/* pseudo class */
+
+/* hovering over the anchor element */
+a:hover {
+    color: #606c38;
+    text-decoration: underline;
+}
+
+/* hovering over the element with the class value of "odd" */
+.odd:hover {
+    color: #000;
+    background-color: white;
+}
+
+/* when an anchor tag is clicked */
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+/* this pseudo class targets every even element inside the list item */
+li:nth-of-type(2n) {
+    background-color: rgb(0, 200, 0);
+}

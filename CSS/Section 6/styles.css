@@ -1,0 +1,18 @@
+/* rgb color codes */
+* {
+    background-color: rgb(218, 165, 32);
+}
+
+h1 {
+    color: rgb(220, 20, 60);
+}
+
+p {
+    color: rgb(138, 43, 226);
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
