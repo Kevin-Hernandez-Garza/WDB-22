@@ -82,3 +82,16 @@ a:active {
 li:nth-of-type(2n) {
     background-color: rgb(0, 200, 0);
 }
+
+/* pseudo element */
+
+/* picks the first letter of each paragraph element */
+p::first-letter {
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+/* highlights elements */
+*::selection {
+    color: rgb(255, 0, 0);
+}
