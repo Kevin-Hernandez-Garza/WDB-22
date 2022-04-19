@@ -1,28 +1,36 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, sans-serif;
+    color: #fff;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     background-color: #e63946;
-    color: white; 
+    padding: 15px 0;
 }
 
 div {
     /* setting the width of the paragraph to 50% width */
     width: 50%;
     background: #e63946;
-    color: #fff;
     /* creates even space, as a result it centers the paragraph */
-    margin-bottom: 10%;
-    height: 40%;
-    /* adding space between the content box and the border */
+    margin-bottom: 20px;
+    /* height: 100%; */
+    /* shorthand adding space between the content box and the border to all sides */
     padding: 20px;
+    /* this property regulates the width back to 50% */
+    box-sizing: border-box;
 }
 
 div:hover {
     /* border & border-radius */
+    /* shorthand: border-width | border-color | border-style */
     border: 4px #000 solid;
     border-radius: 30px;
+}
+
+h2 {
+    background-color: #4361ee;
+    padding: 5px 0 5px 30px;
 }
