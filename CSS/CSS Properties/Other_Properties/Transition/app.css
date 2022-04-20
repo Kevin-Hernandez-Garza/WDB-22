@@ -2,6 +2,8 @@
     width: 300px;
     height: 300px;
     background-color: magenta;
+    /* transition property turning element into a circle when you hover over */
+    /* property name | delay | easing function | property-name | delay  */
     transition: background-color 1s ease-in, border-radius 2s;
 }
 
@@ -16,14 +18,17 @@
     width: 100px;
     background-color: turquoise;
     margin: 20px 0;
+    /* the boxes take 3 seconds before they start moving to the right */
     transition: margin-left 3s;
 } 
 
 section:hover div {
+    /* once you hover they will move 500px to the right */
     margin-left:500px;
 }
 
 div:nth-of-type(1){
+    /* timing function used for each individual div container */
     transition-timing-function: ease-in;
 }
 div:nth-of-type(2){
