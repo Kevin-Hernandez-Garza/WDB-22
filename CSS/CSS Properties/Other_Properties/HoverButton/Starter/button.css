@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* this property will center cause the element to center in the viewport/window */
+  height: 100vh;
+  background-color: #023047;
+}
+
+
+button {
+  background: none;
+  color: #ffb703;
+  border: 2px solid #ffb703;
+  padding: 1em 2em;
+  font-size: 1em;
+  /* the animation happens after 0.25seconds */
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+button:hover {
+  border-color: #f1ff5c;
+  color: #fff;
+  /* X-axis | Y-axis | Blur-radius | Spread-radius | Color */
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  /* moves the element on hover, upwards */
+  transform: translateY(-0.50em);
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,20 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    /* this color is using an alpha channel, and set at 0.7 opacity. This is impacting the background color only */
+    background-color: rgba(255,255,255,0.7)
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    /* an properties we set on an elements to tell it how transparent it will be. 0-1.0. It impacts the entire element */
+    opacity: 0.3;
+}

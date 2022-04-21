@@ -1,0 +1,41 @@
+section.percent-sec {
+    width: 800px;
+    height: 800px;
+    background-color: #52b69a;
+}
+
+div.percent {
+    width: 50%;
+    height: 50%;
+    background-color: #1a759f;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* its relative, so in this case the line-height is 80px because it's 200% of 40px */
+    line-height: 200%;
+}
+
+article {
+    font-size: 30px;
+}
+
+h2.ems-sec {
+    /* this is 60px big parent is the article element */
+    font-size: 2em;
+}
+
+p {
+    /* 15px since it's parent font-size is 30px */
+    font-size: 0.5em;
+}
+
+/* a button using relative units */
+button {
+    font-size: 1em;
+    border-radius: 1em;
+    color: #fff;
+    background-color: #52b69a;
+    padding: 0.5em;
+}

@@ -1,0 +1,31 @@
+.inline {
+    width: 300px;
+    height: 300px;
+    background-color: #4895ef;
+    border: 4px solid #000;
+    display: inline;
+}
+
+.inline-block {
+    width: 300px;
+    height: 300px;
+    background-color: #4361ee;
+    border: 4px solid #000;
+    display: inline-block;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    background-color: #3f37c9;
+    border: 4px solid #000;
+    display: block;
+}
+
+.none {
+    width: 300px;
+    height: 300px;
+    background-color: #3f37c9;
+    border: 4px solid #000;
+    display: none;
+}

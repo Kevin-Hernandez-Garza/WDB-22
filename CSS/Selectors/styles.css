@@ -18,6 +18,11 @@ h1, p {
     text-shadow: 2px 2px 2px #000;
 }
 
+/* takes precedence because of the !important declaration */
+.paragraph {
+    color: #023e8a !important;
+}
+
 /* class selector */
 .paragraph {
     color: #283618;
@@ -48,7 +53,7 @@ input[type="text"] {
 
 /* another example of a attribute selector, where it selects the class attribute with the value of containing the word "odd" */
 p[class~="odd"] {
-    background-color: #000;
+    background-color: #8ecae6;
     color: #fff;
 }
 
@@ -81,4 +86,17 @@ a:active {
 /* this pseudo class targets every even element inside the list item */
 li:nth-of-type(2n) {
     background-color: rgb(0, 200, 0);
+}
+
+/* pseudo element */
+
+/* picks the first letter of each paragraph element */
+p::first-letter {
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+/* highlights elements */
+*::selection {
+    color: rgb(255, 0, 0);
 }
