@@ -55,7 +55,7 @@ section:nth-of-type(2) h1:nth-of-type(4){
     transform: translateX(-500px) rotate(0.5turn) scaleY(1.5);
 }
 
-/* alter the second section container */
+/* alter the second section container by scaling it by 0.7 it's original size */
 section:nth-of-type(2) {
     /* the translateX moves it horizontally */
     transform: scale(0.7) translateX(500px);
