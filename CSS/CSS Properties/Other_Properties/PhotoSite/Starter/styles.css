@@ -1,0 +1,17 @@
+img {
+    width: 30%;
+    /* to get the margin to be responsive we divide the 6 sides by 10% = 1.6666% */
+    /* margin: 1.6666%; */
+    /* another option */
+    margin: calc(10%/6);
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 30%;
+    border-bottom: 2px solid #000;
+    margin-left: calc(10%/6);
+    padding: 1em 0;
+}
