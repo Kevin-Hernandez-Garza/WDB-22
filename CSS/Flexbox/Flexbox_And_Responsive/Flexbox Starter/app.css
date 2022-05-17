@@ -15,23 +15,24 @@ h1 {
     justify-content: center;
     /* cross-axis */
     /* align-items: flex-start; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  */
     /* align-content only works when we have flex-wrap assigned */
     /* align-content: space-around; */
     /* moves the elements on a cross-axis to the center */
     /* align-items: center; */
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    height: 250px;
     margin: 0 auto;
     border: 5px solid #003049;
 }
 
 #container div {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     /* font-size: 4em; */
     /* text-align: center; */
+    flex-basis: 600px;
 }
 
 /* div:nth-of-type(even) {
@@ -41,10 +42,13 @@ h1 {
 
 div:nth-of-type(1) {
     flex-grow: 1;
+    flex-shrink: 3;
 }
 
 div:nth-of-type(5) {
     flex-grow: 2;
+    /* it will maintain the 600px with set on the flex-basis */
+    flex-shrink: 0;
 }
 
 footer {
