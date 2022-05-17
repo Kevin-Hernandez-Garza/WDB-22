@@ -10,14 +10,14 @@ h1 {
     /* columns are stacked on the main-axis */
     /* justify-content is spaced evenly between container and elements */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* main-axis */
     justify-content: center;
     /* cross-axis */
     align-items: flex-end;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-content only works when we have flex-wrap assigned */
-    align-content: space-around;
+    /* align-content: space-around; */
     /* moves the elements on a cross-axis to the center */
     /* align-items: center; */
     background-color: #003049;
@@ -30,8 +30,12 @@ h1 {
 #container div {
     height: 200px;
     width: 200px;
-    font-size: 4em;
-    text-align: center;
+    /* font-size: 4em; */
+    /* text-align: center; */
+}
+
+#selfA {
+    align-self: flex-start;
 }
 
 footer {
