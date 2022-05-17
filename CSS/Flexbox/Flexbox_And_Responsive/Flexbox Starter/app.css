@@ -35,7 +35,8 @@ h1 {
 }
 
 div:nth-of-type(even) {
-    align-self: flex-start;
+    align-self: center;
+    flex-basis: 600px;
 }
 
 footer {
