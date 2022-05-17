@@ -34,7 +34,7 @@ h1 {
     /* text-align: center; */
 }
 
-#selfA {
+div:nth-of-type(even) {
     align-self: flex-start;
 }
 
