@@ -5,11 +5,14 @@ h1 {
     text-align: center;
 }
 #container {
-    display: flex;
     /* the colors are reverse in their order, of the main axis */
     /* flex-direction: row-reverse; */
-    /* columns are stacked on the cross-axis */
-    flex-direction: column;
+    /* columns are stacked on the main-axis */
+    /* justify-content is spaced evenly between container and elements */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
     background-color: #003049;
     width: 90%;
     height: 500px;
@@ -19,6 +22,6 @@ h1 {
 
 #container div {
     height: 200px;
-    width: 200px;
+    width: 400px;
 }
 
