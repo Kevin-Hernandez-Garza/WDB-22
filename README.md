@@ -25,6 +25,7 @@
 - HTML
 - CSS
 - Javascript
+- Bootstrap
 
 ## Contribution
 
