@@ -47,7 +47,7 @@ ul,li {
 }
 
 /* when the display is on orientation */
-@media (orientation: landscape) {
+@media (orientation: portrait) {
     body {
         background-color: blue;
     }
@@ -58,5 +58,17 @@ ul,li {
 
     a {
         color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
     }
 }
