@@ -40,6 +40,12 @@ h1 {
     flex-basis: 600px;
 } */
 
+/* flex shorthand takes in three values */
+/* flex: flex-grow | flex-shrink | flex-basis */
+div:nth-last-of-type(3) {
+    flex: 2 1 10%;
+}
+
 div:nth-of-type(1) {
     flex-grow: 1;
     flex-shrink: 3;

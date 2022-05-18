@@ -42,6 +42,7 @@ main {
 }
 main .sidebar {
     background-color: #6930c3;
+    /* flex-grow | flex-shrink | flex-basis */
     flex:1 2 300px;
 }
 main .maincontent {
