@@ -5,14 +5,24 @@ h1 {
     text-align: center;
 }
 #container {
-    display: flex;
     /* the colors are reverse in their order, of the main axis */
     /* flex-direction: row-reverse; */
-    /* columns are stacked on the cross-axis */
-    flex-direction: column;
+    /* columns are stacked on the main-axis */
+    /* justify-content is spaced evenly between container and elements */
+    display: flex;
+    flex-direction: row;
+    /* main-axis */
+    justify-content: center;
+    /* cross-axis */
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap;  */
+    /* align-content only works when we have flex-wrap assigned */
+    /* align-content: space-around; */
+    /* moves the elements on a cross-axis to the center */
+    /* align-items: center; */
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    height: 250px;
     margin: 0 auto;
     border: 5px solid #003049;
 }
@@ -20,5 +30,36 @@ h1 {
 #container div {
     height: 200px;
     width: 200px;
+    /* font-size: 4em; */
+    /* text-align: center; */
+    flex-basis: 600px;
+}
+
+/* div:nth-of-type(even) {
+    align-self: center;
+    flex-basis: 600px;
+} */
+
+/* flex shorthand takes in three values */
+/* flex: flex-grow | flex-shrink | flex-basis */
+div:nth-last-of-type(3) {
+    flex: 2 1 10%;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+div:nth-of-type(5) {
+    flex-grow: 2;
+    /* it will maintain the 600px with set on the flex-basis */
+    flex-shrink: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* align-self: flex-end; */
 }
 
