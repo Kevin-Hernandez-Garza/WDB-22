@@ -1,3 +1,5 @@
+/*
+
 // is type is an object
 
 // array of strings
@@ -20,8 +22,6 @@ console.log(array[2]); //oregon
 array[4] = 'north carolina';
 console.log(array);
 
-/*
-
 ==============
 Array Methods
 ==============
@@ -41,26 +41,27 @@ sort - sorts an array
 
 */
 
+/* 
 let arrayMethods = ['road', 'houses'];
 
 arrayMethods.push('cars', 'trees'); // ['road', 'houses', 'cars'];
-// console.log(arrayMethods);
+console.log(arrayMethods);
 
 // removes the last element from the array ** No argument needed **
 arrayMethods.pop(); 
-// console.log(arrayMethods);
+console.log(arrayMethods);
 
 // if you try to remove a element from an empty array you get undefined
 arrayMethods.shift(); //removes 'road'
-// console.log(arrayMethods);
+console.log(arrayMethods);
 
 arrayMethods.unshift('roads');
-// console.log(arrayMethods);
+console.log(arrayMethods);
 
 const array1 = ['a', 'b', 'c'];
 const array2 = ['d', 'e', 'f'];
 const array3 = array1.concat(array2);
-// console.log(array3); // ['a', 'b', 'c', 'd', 'e', 'f']
+console.log(array3); // ['a', 'b', 'c', 'd', 'e', 'f']
 
 console.log(array3.includes('g')); //false
 console.log(array3.includes('e')); //true
@@ -90,5 +91,8 @@ console.log(numbers);
 // converts the array into string elements and determines sort based on their UTF-16 unit values
 console.log(numbers.sort());
 
+// nested arrays
+let gameBoard = [['o', 'x', null], ['x', 'o', 'x'], ['x', null, 'o']];
+console.log(gameBoard[2][2]); // 'o' accessing the third array and index 2 from that array
 
-
+*/
