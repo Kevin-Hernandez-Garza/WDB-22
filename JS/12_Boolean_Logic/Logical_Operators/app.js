@@ -17,6 +17,7 @@ if (password.length >= 6 && password.indexOf(' ') === -1) {
 // 10-65 $20
 // 65+ free
 
+// the && operator has precedence over the || operator
 const ages = 100;
 // greater than or equal to 0 and less than 5 or age is greater or equal to 65 than it's free
 if ((ages >= 0 && ages < 5) || ages >= 65) {
