@@ -42,9 +42,30 @@ if ((ages >= 0 && ages < 5) || ages >= 65) {
 // COMBINING && and ||
 // =====================
 const age = 8;
+// if the age is not greater than or equal to 0 and not less than 5 or age is not greater than or equal to 65 then print to console
 if (!(age >= 0 && age < 5 || age >= 65)) {
     console.log("YOU ARE NOT A BABY OR A SENIOR!")
 }
 
-
+// switch case statement
+const day = 2;
+switch(day) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2: 
+        console.log('Tuesday');
+        break;
+    case 3: 
+        console.log('Wednesday');
+        break;
+    case 4: 
+        console.log('Thursday');
+        break;
+    case 5: 
+        console.log('Friday');
+        break;
+    default:
+         console.log('Invalid Number!')
+} // result in Tuesday
 
