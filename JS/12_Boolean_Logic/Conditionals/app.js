@@ -13,6 +13,7 @@ console.log(random);
 // PROMPT EXAMPLE
 // =====================
 
+// lowercase the input from the user just in case they uppercase the text
 const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
 
 if (dayOfWeek === 'monday') {
@@ -21,7 +22,10 @@ if (dayOfWeek === 'monday') {
     console.log("YAY I LOVE SATURDAYS!")
 } else if (dayOfWeek === 'friday') {
     console.log("FRIDAYS ARE DECENT, ESPECIALLY AFTER WORK!")
-} else {
+} else if (dayOfWeek === 'sunday') {
+    console.log("No, tomorrow is Monday!!")
+}
+ else {
     console.log("MEH")
 }
 
