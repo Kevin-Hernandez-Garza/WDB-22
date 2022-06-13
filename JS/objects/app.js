@@ -48,3 +48,23 @@ console.log(soccer.runnerUp); // Canada
 // adding more properties to an object
 soccer.allTimeGreat = "China";
 console.log(soccer); // array with added property of "allTimeGreat"
+
+
+// Array of Objects
+const comment = [
+    {
+        name: "Spencer",
+        age: "29"
+    },
+    {
+        name: "Lisa",
+        age: "34"
+    },
+    {
+        name: "Ly",
+        age: "101"
+    }
+];
+
+// access the array of objects
+console.log(comment[0].name); // Spencer??
