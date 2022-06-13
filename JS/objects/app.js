@@ -30,5 +30,21 @@ const home = {
     zipcode: "78681"
 };
 
+// object literal
 let mailAddress = `${home.address}, ${home.city}, ${home.state}, ${home.zipcode}`;
 console.log(mailAddress); //FORMAT (address, city, state, zip-code)
+
+
+// changing the values of an object's property 
+let soccer = {
+    champ: "USA",
+    runnerUp: "France",
+    loser: "Russia"
+};
+
+soccer.runnerUp = "Canada";
+console.log(soccer.runnerUp); // Canada
+
+// adding more properties to an object
+soccer.allTimeGreat = "China";
+console.log(soccer); // array with added property of "allTimeGreat"
