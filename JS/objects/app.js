@@ -67,4 +67,4 @@ const comment = [
 ];
 
 // access the array of objects
-console.log(comment[0].name); // Spencer??
+console.log(comment[0].name); // Spencer
