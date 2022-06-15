@@ -49,4 +49,15 @@ for (let num = 1; num <= 10; num += 1) {
 
 
 
+// =========================
+// my work on Loops
+// =========================
+
+// for loop
+// for (initialExp, condition, incrementExp) {}
+// (start at 0, stop at 10, add 1 each time)
+for (let i = 0; i <= 10; i++) {
+    console.log("we're here!")
+};
+
 
