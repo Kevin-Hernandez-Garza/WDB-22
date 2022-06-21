@@ -4,9 +4,9 @@ const subreddits = ['cringe', 'books', 'chickens', 'funny', 'pics', 'soccer', 'g
 //     console.log(`Visit reddit.com/r/${subreddits[i]}`)
 // }
 
-for (let subreddit of subreddits) {
-    console.log(`Visit reddit.com/r/${subreddit}`)
-}
+// for (let subreddit of subreddits) {
+//     console.log(`Visit reddit.com/r/${subreddit}`)
+// }
 
 
 
@@ -33,3 +33,18 @@ for (let subreddit of subreddits) {
 //     console.log(char)
 // }
 
+
+
+
+// own work
+
+// for loop
+const team = ['canada', 'uk', 'usa', 'germany', 'italy', 'korea'];
+for (let i = 0; i < team.length; i++) {
+    console.log(`hello reddit.com/r/${team[i]}`);
+}
+
+// for of loop
+for (let t of team){
+    console.log(`the link is google.com/s/${t}`);
+}
